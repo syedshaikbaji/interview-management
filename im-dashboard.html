@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interview Management: Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome6/css/all.css">
+    <link rel="stylesheet" href="./css/BoxShadowBorders.css">
+    <link rel="stylesheet" href="./css/obtn.css">
+    <link rel="stylesheet" href="./css/form-group.css">
+    <link rel="stylesheet" href="./css/colfw-styles.css">
+    <link rel="stylesheet" href="./css/LineLimit.css">
+    <link rel="stylesheet" href="./css/tooltips.css">
+    <link rel="stylesheet" href="./css/customStyles.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="page-view-dashboard">
+    <!-- <main class="maxwidth-manager mx-auto"> -->
+    <!-- <section class="ason_section d-none d-lg-block">
+        <div class="container">
+            <div class="row js_top_bar_section align-items-center">
+                <article class="col-lg-12">
+                    <img src="./images/ascendion-logo-white.svg" class="ason-logo img-fluid" alt="girish">
+                </article>
+            </div>
+        </div>
+    </section> -->
+    <section class="navigation-section bs-bottom">
+        <div class="container position-relative p-0">
+            <!-- Info: TOP navigation -->
+            <nav class="navbar navbar-expand-xl p-0 navbar-dark justify-content-between">
+                <div class="nav-left inrow-group col-lg-8 px-2 p-lg-0 align-items-stretch">
+                    <!-- Warning: Has Duplicate -->
+                    <div
+                        class="navbar--sidenav_toggle_btn d-none p-0 d-lg-flex align-items-center justify-content-center">
+                        <!-- <button type="button" class="navbar-toggler p-0 font-16">
+                            <span class="navbar-toggler-icon"></span>
+                            <i class="fa-regular fa-bars font-22 color-black"></i>
+                            <i class="fa-solid fa-xmark font-20"></i>
+                        </button> -->
+                        <img src="./images/logo-asc-favicon.svg" class="img-fluid" alt="">
+                    </div>
+                    <!-- Warning: Has Duplicate END -->
+                    <div class="navbar--module_titles d-flex-row-wrap">
+                        <a href="#" class="active">Interview Management</a>
+                        <!-- <a href="#" class="">Dashboard</a> -->
+                    </div>
+                </div>
+                <div class="nav-right bc_nav_profile col-lg-4 p-0 text-right py-2 py-lg-0">
+                    <!-- Warning: Has Duplicate -->
+                    <div
+                        class="navbar--sidenav_toggle_btn p-0 d-flex d-lg-none align-items-center justify-content-center">
+                        <button type="button" class="navbar-toggler p-0 font-16">
+                            <span class="navbar-toggler-icon"></span>
+                            <i class="fa-regular fa-xmark font-20 text-color-white"></i>
+                        </button>
+                    </div>
+                    <!-- Warning: Has Duplicate END -->
+                    <button type="button" class="notification-bell border-0 bg-none d-none d-lg-inline-block">
+                        <i class="fa-solid fa-bell text-color-white"></i>
+                    </button>
+                    <span class="d-inline-flex flex-wrap justify-content-end cursor-pointer">
+                        <div class="picture-block p-0 px-1">
+                            <figure class="m-0 p-0">
+                                <!-- <img src="./images/girish.jpeg" class="img-fluid" alt="girish"> -->
+                                <figcaption class="mp-rounded text-profile-img text-uppercase">NC</figcaption>
+                            </figure>
+                        </div>
+                        <div class="details-block p-0 px-1">
+                            <h4 class="name p-0 m-0 mb-0 text-left">Niraj Chavan</h4>
+                            <span class="position p-0 m-0 text-left">Senior Executive Applications</span>
+                        </div>
+                        <!-- Info: click handler for dropdown -->
+                        <div class="bc_nav_profile--dropdown_btn p-0 px-2 d-flex align-items-center"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-angle-down font-12 text-color-white"></i>
+                        </div>
+                    </span>
+                    <!-- Info: add or remove class "active" to toggle dropdown -->
+                    <span class="bc_nav_profile--dropdown">
+                        <ul class="m-0 p-0">
+                            <li>
+                                <a href="#" class="font-14 fontfam-hn-regular">
+                                    <i class="fa-regular fa-arrow-right-from-bracket pr-3"></i>
+                                    Logout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-14 fontfam-hn-regular">
+                                    <i class="fa-regular fa-cog pr-3"></i>
+                                    Settings
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="clearfix clear-fix"></div>
+            </nav>
+            <!-- Info: TOP navigation END -->
+        </div>
+    </section>
+    <section class="maincontent-section">
+        <div class="container p-0">
+            <div class="row m-0">
+                <aside class="lc_main_aside js_main_aside">
+                    <ul class="bc_module_list m-0 list-unstyled text-center px-2 py-3">
+                        <li class="px-2 py-2 mb-2 text-left align-items-center d-lg-flex">
+                            <button class="sidenav_toggle_btn-lg js_sidenav_toggle_btn border-0 bg-none p-0">
+                                <i class="fa-regular fa-bars text-color-white font-20"></i>
+                                <i class="fa-solid fa-xmark text-color-white font-20"></i>
+                            </button>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="active px-2 py-2 bg-white" data-toggle="tooltip" data-placement="right"
+                                title="Dashnboard">
+                                <!-- <img class="img-fluid" src="./images/icons/ic-er-dashboard.svg" alt=""> -->
+                                <i class="fa-regular py-1 fa-calendar-circle-user font-18"></i>
+                                <span class="pl-2 pt-1 font-14">Dashnboard</span>
+                            </a>
+                        </li>
+                        <!-- <li class="mb-4">
+                            <a href="#" class="px-3 py-3">
+                                <img class="img-fluid" src="./images/icons/ic-cre-mapping.svg" alt="">
+                                <span class="pl-2 pt-1 font-14">CRE Mapping</span>
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="px-3 py-3">
+                                <img class="img-fluid" src="./images/icons/ic-cre-mapping.svg" alt="">
+                                <span class="pl-2 pt-1 font-14">Termed ER Details</span>
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="px-3 py-3">
+                                <img class="img-fluid" src="./images/icons/ic-termed-er.svg" alt="">
+                                <span class="pl-2 pt-1 font-14">Multi Client Details</span>
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="px-3 py-3">
+                                <img class="img-fluid" src="./images/icons/ic-multi-client-consultant.svg" alt="">
+                                <span class="pl-2 pt-1 font-14">Consultants Report</span>
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="px-3 py-3">
+                                <img class="img-fluid" src="./images/icons/ic-active-or-term-consultant.svg" alt="">
+                                <span class="pl-2 pt-1 font-14">Candidate Connect</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </aside>
+                <!-- Info: Employee details main -->
+                <article class="im-dashboad lc_main_content px-xl-3 py-xl-3">
+                    <div class="card imcard imcard-radius imcard-radius bg-none col-lg-12 p-0">
+                        <!-- Info: imcard -->
+                        <div class="inrow-db col-lg-12 p-0">
+                            <div class="recruiters-all-block col-lg-4 p-0">
+                                <div class="col-12 px-2 py-2 bsb-1 d-flex">
+                                    <h3 class="imcard--title fontfam-nm-bold m-0">Requisitons</h3>
+                                    <div class="form-group m-0 col-4 bsb-1 p-0 ml-auto">
+                                        <span class="has-icon">
+                                            <select class="select-req-status form-control required" name=""
+                                                id="SelectDocument">
+                                                <option value="" disabled selected hidden>Req Status</option>
+                                                <option value="">Open - Posted</option>
+                                                <option value="">Open - Expired</option>
+                                                <option value="">Closed</option>
+                                                <option value="">All</option>
+                                            </select>
+                                            <!-- <i class="con fa-regular fa-angle-down px-1"></i> -->
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-2 py-3">
+                                    <div class="form-group m-0">
+                                        <span class="has-icon high-icon">
+                                            <input type="text" id="SearchInput" class="form-control"
+                                                placeholder="Search Requisitions/Rec ID" value="">
+                                            <button class="con border-0 pe-all">
+                                                <i class="fa-regular fa-magnifying-glass"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="recruiters-list col-12 px-2 pt-0 pb-3 h-100">
+                                    <div class="col-12 p-0">
+                                        <div class="recruiters-list--item col-12 p-0 mb-2">
+                                            <div class="col-12 py-2 px-3">
+                                                <h4>Technical Recruiter - P.R Pote Patil Group (Pool Drive) - (210000OM)
+                                                </h4>
+                                                <span class="req-status-chip px-1">
+                                                    Open - Posted
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="recruiters-list--item col-12 p-0 mb-2 active">
+                                            <div class="col-12 py-2 px-3">
+                                                <h4>Technical Recruiter - P.R Pote Patil Group (Pool Drive) - (210000OM)
+                                                </h4>
+                                                <span class="req-status-chip px-1">
+                                                    Open - Posted
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="recruiters-list--item col-12 p-0 mb-2">
+                                            <div class="col-12 py-2 px-3">
+                                                <h4>Technical Recruiter - P.R Pote Patil Group (Pool Drive) - (210000OM)
+                                                </h4>
+                                                <span class="req-status-chip px-1">
+                                                    Open - Posted
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="recruiters-list--item col-12 p-0 mb-2">
+                                            <div class="col-12 py-2 px-3">
+                                                <h4>Technical Recruiter - P.R Pote Patil Group (Pool Drive) - (210000OM)
+                                                </h4>
+                                                <span class="req-status-chip px-1">
+                                                    Open - Posted
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="recruiters-list--item col-12 p-0 mb-2">
+                                            <div class="col-12 py-2 px-3">
+                                                <h4>Technical Recruiter - P.R Pote Patil Group (Pool Drive) - (210000OM)
+                                                </h4>
+                                                <span class="req-status-chip px-1">
+                                                    Open - Posted
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="recruiters-list--item col-12 p-0 mb-2">
+                                            <div class="col-12 py-2 px-3">
+                                                <h4>Technical Recruiter - P.R Pote Patil Group (Pool Drive) - (210000OM)
+                                                </h4>
+                                                <span class="req-status-chip px-1">
+                                                    Open - Posted
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="currently-no-block col-12 p-0 d-flex align-items-center justify-content-center h-lg-100">
+                                        <span class="d-inline-block">
+                                            <img class="img-fluid mb-4" src="./images/currently-no.png" alt="">
+                                            <p class="m-0">Currently no <br> requisitions available</p>
+                                        </span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="selected-recruiter-view bg-white col-lg-8 p-0">
+                                <div class="col-12 p-0">
+                                    <div class="selected-recruiter-view--header col-lg-12 p-0">
+                                        <span class="firm-logo d-none d-lg-block">
+                                            <!-- <img class="img-fluid" src="./images/logo-cogbee.png" alt=""> -->
+                                            <img class="img-fluid" src="./images/logo-monjin.png" alt="">
+                                        </span>
+                                        <div class="col-lg-12 p-0 px-3 pt-3">
+                                            <h2 class="selected-recruiter-view--header--title line-limit only-lines-1">Technical Recruiter - P.R
+                                                Pote Patil Group (Pool Drive) - (210000OM) Technical Recruiter - P.R
+                                                Pote Patil Group (Pool Drive) - (210000OM)</h2>
+                                        </div>
+                                        <div
+                                            class="selected-recruiter-view--header--details col-12 col-lg-9 p-0 px-3 mb-3 text-left">
+                                            <div class="selected-recruiter--req-status col-lg-4 p-0">
+                                                <i class="fa-regular fa-wave-pulse mr-1 font-14 d-none d-lg-inline"></i>
+                                                <span class="req-status-chip px-1 font-12 font-lg-14">
+                                                    Open - Posted
+                                                </span>
+                                            </div>
+                                            <div class="selected-recruiter--name col-lg-4 p-0">
+                                                <span class="fontfam-hn-medium font-12 font-lg-14">
+                                                    <i class="fa-regular fa-user mr-1 font-14 d-none d-lg-inline"></i>
+                                                    Ajay Chauhan
+                                                </span>
+                                            </div>
+                                            <div class="selected-recruiter--location col-lg-4 p-0">
+                                                <span class="fontfam-hn-medium font-12 font-lg-14">
+                                                    <i
+                                                        class="fa-regular fa-location-dot mr-1 font-14 d-none d-lg-inline"></i>
+                                                    Vadodara (CH2)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="selected-recruiter-view--header--legends col-12 p-0 px-3 py-2 bstb-1 text-left">
+                                            <div
+                                                class="legend selected-recruiter--hired d-inline-block p-0 pr-3 bsr-1 font-12 font-lg-14">
+                                                Hired
+                                                <span class="px-2 font-12 font-lg-16">
+                                                    01
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="legend selected-recruiter--positions d-inline-block p-0 px-3 bsr-1 font-12 font-lg-14">
+                                                Positions
+                                                <span class="px-2 font-12 font-lg-16">
+                                                    02
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="legend selected-recruiter--applications d-inline-block p-0 px-3 font-12 font-lg-14">
+                                                Applications
+                                                <span class="px-2 font-12 font-lg-16">
+                                                    120
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selected-recruiter-view--body col-lg-12 p-0">
+                                        <div class="inrow-search col-12 p-3">
+                                            <div class="col-md-11 p-0">
+                                                <div class="form-group m-0">
+                                                    <span class="has-icon high-icon">
+                                                        <input type="text" id="SearchInput" class="form-control"
+                                                            placeholder="Search Candidate by Name/Email ID/Ascendion ID"
+                                                            value="">
+                                                        <button class="con border-0 pe-all">
+                                                            <i class="fa-regular fa-magnifying-glass"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-md-1 p-0 d-none d-md-flex align-items-center justify-content-center">
+                                                <span class="dashboard-filter-block">
+                                                    <button type="button"
+                                                        class="js_openclose_popoverfilter border-0 bg-none pt-1">
+                                                        <i class="fa-regular fa-filter font-30"></i>
+                                                    </button>
+                                                    <div class="popover-filter">
+                                                        <div class="col-12 p-0">
+                                                            <div class="popover-filter--header inrow- col-12 p-2 bsb-1 align-items-center">
+                                                                <h3 class="imcard--title fontfam-nm-bold m-0">Filters
+                                                                </h3>
+                                                                <button
+                                                                    class="border-0 bg-none text-color-blue ml-auto">Reset</button>
+                                                                <button
+                                                                    class="js_openclose_popoverfilter border-0 bg-none ml-3">
+                                                                    <i class="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="inrow- col-12 p-2 popover-filter--body">
+                                                                <div class="col-lg-7 px-2">
+                                                                    <div class="form-group">
+                                                                        <label for="SearchInput">Candidate</label>
+                                                                        <span class="has-icon">
+                                                                            <input type="text" id="SearchInput"
+                                                                                class="form-control"
+                                                                                placeholder="Search by Candidate Name"
+                                                                                value="">
+                                                                            <i
+                                                                                class="con fa-regular fa-magnifying-glass px-1"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-5 px-2">
+                                                                    <div class="form-group">
+                                                                        <label for="SelectDocument">Exp.</label>
+                                                                        <span class="has-icon">
+                                                                            <select class="form-control required"
+                                                                                name="" id="SelectDocument">
+                                                                                <option value="">Select Document Type
+                                                                                </option>
+                                                                                <option value="">Document 1 type
+                                                                                </option>
+                                                                                <option value="">Document 2 type
+                                                                                </option>
+                                                                            </select>
+                                                                            <i
+                                                                                class="con fa-regular fa-angle-down px-1"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 px-2">
+                                                                    <div class="form-group m-0 d-flex flex-wrap">
+                                                                        <label class="colfw-100"
+                                                                            for="SelectDocument">Status</label>
+                                                                        <label class="checkbox m-0 mb-2 colfw-50">
+                                                                            <input class="mr-2" type="checkbox">
+                                                                            <span>
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                            Interview Pending
+                                                                        </label>
+                                                                        <label class="checkbox m-0 mb-2 colfw-50">
+                                                                            <input class="mr-2" type="checkbox">
+                                                                            <span>
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                            Interview Scheduled
+                                                                        </label>
+                                                                        <label class="checkbox m-0 mb-2 colfw-50">
+                                                                            <input class="mr-2" type="checkbox">
+                                                                            <span>
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                            Interview Completed
+                                                                        </label>
+                                                                        <label class="checkbox m-0 mb-2 colfw-50">
+                                                                            <input class="mr-2" type="checkbox">
+                                                                            <span>
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                            Selected
+                                                                        </label>
+                                                                        <label class="checkbox m-0 mb-2 colfw-50">
+                                                                            <input class="mr-2" type="checkbox">
+                                                                            <span>
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                            Hired
+                                                                        </label>
+                                                                        <label class="checkbox m-0 mb-2 colfw-50">
+                                                                            <input class="mr-2" type="checkbox">
+                                                                            <span>
+                                                                                <i class="fa-solid fa-check"></i>
+                                                                            </span>
+                                                                            All
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="popover-filter--footer col-12 px-3 py-2 d-flex">
+                                                                <button
+                                                                    class="obtn obtn-secondary obtn-reg ml-auto">Cancel</button>
+                                                                <button
+                                                                    class="obtn obtn-primary obtn-reg ml-3">Apply</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 p-0 px-3">
+                                            <div class="bg-white col-lg-12 p-0" style="overflow-x: auto;">
+                                                <!-- <div class="inrow-header p-2">
+                                                    <h3 class="fontfam-hn-medium font-18 color-charcoal-grey m-0">Report Header Goes here</h3>
+                                                    <div class="actions col-lg-3 p-0 ml-auto text-right">
+                                                        <button class="ic-action border-0 bg-transparent">
+                                                            <img class="img-fluid" src="./images/icons/ic-print-blue.svg" alt="">
+                                                        </button>
+                                                        <button class="ic-action border-0 bg-transparent">
+                                                            <img class="img-fluid" src="./images/icons/ic-excel-green.svg" alt="">
+                                                        </button>
+                                                        <button class="ic-action border-0 bg-transparent">
+                                                            <img class="img-fluid" src="./images/icons/ic-pdf-red.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div> -->
+                                                <div class="inrow-table candidate-table-container p-0">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-striped report-table"
+                                                            style="width: 100%;">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="colfw-30">Candidate Name</th>
+                                                                    <th class="colfw-22">Current Org.</th>
+                                                                    <th class="colfw-18 text-center">Interview Status
+                                                                    </th>
+                                                                    <th class="colfw-10 text-center">Experience</th>
+                                                                    <th class="colfw-20 text-center">&nbsp;</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <b>Subramanyam Jaishankar</b>
+                                                                        <span class="d-block">
+                                                                            <b>T122334</b><br>
+                                                                            Risod, Maharashtra, India
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>IBM India Pvt. Ltd</td>
+                                                                    <td class="text-center">Pending</td>
+                                                                    <td class="text-center">5+ Years</td>
+                                                                    <td class="text-right">
+                                                                        <span class="tr-actions">
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i class="fa-regular fa-file-lines"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-green-medium-light"
+                                                                                data-toggle="modal"
+                                                                                data-target="#scheduleInterviewModal">
+                                                                                <i
+                                                                                    class="fa-regular fa-calendar-clock"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue"
+                                                                                data-toggle="modal"
+                                                                                data-target="#myModal">
+                                                                                <i
+                                                                                    class="fa-regular fa-pen-to-square"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <b>Subramanyam Jaishankar</b>
+                                                                        <span class="d-block">
+                                                                            <b>T122334</b><br>
+                                                                            Risod, Maharashtra, India
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>IBM India Pvt. Ltd</td>
+                                                                    <td class="text-center">Pending</td>
+                                                                    <td class="text-center">5+ Years</td>
+                                                                    <td class="text-right">
+                                                                        <span class="tr-actions">
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i class="fa-regular fa-file-lines"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-red"
+                                                                                data-toggle="modal"
+                                                                                data-target="#rescheduleInterviewModal">
+                                                                                <i class="fa-regular fa-calendar-pen"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-red-medium-dark"
+                                                                                data-toggle="modal"
+                                                                                data-target="#cancelInterviewModal">
+                                                                                <i class="fa-regular fa-calendar-xmark"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <b>Subramanyam Jaishankar</b>
+                                                                        <span class="d-block">
+                                                                            <b>T122334</b><br>
+                                                                            Risod, Maharashtra, India
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>IBM India Pvt. Ltd</td>
+                                                                    <td class="text-center">Pending</td>
+                                                                    <td class="text-center">5+ Years</td>
+                                                                    <td class="text-right">
+                                                                        <span class="tr-actions">
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i class="fa-regular fa-file-lines"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-pink">
+                                                                                <i class="fa-regular fa-message-lines"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <b>Subramanyam Jaishankar</b>
+                                                                        <span class="d-block">
+                                                                            <b>T122334</b><br>
+                                                                            Risod, Maharashtra, India
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>IBM India Pvt. Ltd</td>
+                                                                    <td class="text-center">Pending</td>
+                                                                    <td class="text-center">5+ Years</td>
+                                                                    <td class="text-right">
+                                                                        <span class="tr-actions">
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i class="fa-regular fa-file-lines"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-green-medium-light">
+                                                                                <i
+                                                                                    class="fa-regular fa-calendar-clock"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i
+                                                                                    class="fa-regular fa-pen-to-square"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <b>Subramanyam Jaishankar</b>
+                                                                        <span class="d-block">
+                                                                            <b>T122334</b><br>
+                                                                            Risod, Maharashtra, India
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>IBM India Pvt. Ltd</td>
+                                                                    <td class="text-center">Pending</td>
+                                                                    <td class="text-center">5+ Years</td>
+                                                                    <td class="text-right">
+                                                                        <span class="tr-actions">
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i class="fa-regular fa-file-lines"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-green-medium-light">
+                                                                                <i
+                                                                                    class="fa-regular fa-calendar-clock"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i
+                                                                                    class="fa-regular fa-pen-to-square"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <b>Subramanyam Jaishankar</b>
+                                                                        <span class="d-block">
+                                                                            <b>T122334</b><br>
+                                                                            Risod, Maharashtra, India
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>IBM India Pvt. Ltd</td>
+                                                                    <td class="text-center">Pending</td>
+                                                                    <td class="text-center">5+ Years</td>
+                                                                    <td class="text-right">
+                                                                        <span class="tr-actions">
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i class="fa-regular fa-file-lines"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-green-medium-light">
+                                                                                <i
+                                                                                    class="fa-regular fa-calendar-clock"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i
+                                                                                    class="fa-regular fa-pen-to-square"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <b>Subramanyam Jaishankar</b>
+                                                                        <span class="d-block">
+                                                                            <b>T122334</b><br>
+                                                                            Risod, Maharashtra, India
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>IBM India Pvt. Ltd</td>
+                                                                    <td class="text-center">Pending</td>
+                                                                    <td class="text-center">5+ Years</td>
+                                                                    <td class="text-right">
+                                                                        <span class="tr-actions">
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i class="fa-regular fa-file-lines"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-green-medium-light">
+                                                                                <i
+                                                                                    class="fa-regular fa-calendar-clock"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i
+                                                                                    class="fa-regular fa-pen-to-square"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <b>Subramanyam Jaishankar</b>
+                                                                        <span class="d-block">
+                                                                            <b>T122334</b><br>
+                                                                            Risod, Maharashtra, India
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>IBM India Pvt. Ltd</td>
+                                                                    <td class="text-center">Pending</td>
+                                                                    <td class="text-center">5+ Years</td>
+                                                                    <td class="text-right">
+                                                                        <span class="tr-actions">
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i class="fa-regular fa-file-lines"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-green-medium-light">
+                                                                                <i
+                                                                                    class="fa-regular fa-calendar-clock"></i>
+                                                                            </button>
+                                                                            <button
+                                                                                class="border-0 bg-none font-16 text-color-blue">
+                                                                                <i
+                                                                                    class="fa-regular fa-pen-to-square"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- <div class="currently-no-block col-12 p-0 d-flex align-items-center justify-content-center h-lg-100">
+                                                        <span class="d-inline-block">
+                                                            <img class="img-fluid mb-4" src="./images/currently-no-applications.png" alt="">
+                                                            <p class="m-0">Currently no <br> applications available <br> for the requisition</p>
+                                                        </span>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Info: imcard END -->
+                    </div>
+                </article>
+                <!-- Info: Employee details main END -->
+            </div>
+        </div>
+    </section>
+    <!-- </main> -->
+    <!-- Info: The Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header d-flex align-items-center p-2">
+                    <h3 class="imcard--title fontfam-nm-bold m-0">Edit Candidate Information</h3>
+                    <button type="button" class="close opacity-1 p-0 m-0" data-dismiss="modal"><i
+                            class="fa-regular fa-xmark color-red"></i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body px-0">
+                    <div class="popupform-content col-lg-12 p-0">
+                        <div class="inrow-modal_form">
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="email">First Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter email" id="email"
+                                        value="Vijay Parmar">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="email">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter email" id="email"
+                                        value="Vijay Parmar">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="email">Mobile Number</label>
+                                    <input type="text" class="form-control" placeholder="Enter email" id="email"
+                                        value="Vijay Parmar">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="email">Current Organization</label>
+                                    <input type="text" class="form-control" placeholder="Enter email" id="email"
+                                        value="Vijay Parmar">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="email">Timezone</label>
+                                    <input type="text" class="form-control" placeholder="Enter email" id="email"
+                                        value="Vijay Parmar">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="email">Resume</label>
+                                    <div class="col-12 p-0">
+                                        <a href="#" class="resume-download-chip px-3 py-2">
+                                            Subramanyam-jaishankar-Resume.pdf
+                                            <i class="fa-regular fa-arrow-down-to-line"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="submit-button-group col-12 p-0 text-right m-0">
+                        <span>
+                            <button type="button" class="obtn obtn-secondary obtn-md mr-2">Discard</button>
+                            <button type="button" class="obtn obtn-primary obtn-reg">Submit</button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="scheduleInterviewModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header d-flex align-items-center p-2">
+                    <h3 class="imcard--title fontfam-nm-bold m-0">Schedule Interview - Subramanyam Jaishankar</h3>
+                    <button type="button" class="close opacity-1 p-0 m-0" data-dismiss="modal"><i
+                            class="fa-regular fa-xmark color-red"></i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body px-0">
+                    <div class="popupform-content col-lg-12 p-0">
+                        <div class="inrow-modal_form">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="SelectDocument">Timezone</label>
+                                    <span class="has-icon">
+                                      <select class="form-control required" name="" id="SelectDocument">
+                                        <option value="">Select Document Type</option>
+                                        <option value="">Document 1 type</option>
+                                        <option value="">Document 2 type</option>
+                                      </select>
+                                      <i class="con fa-regular fa-angle-down px-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="email">Date</label>
+                                    <input type="date" class="form-control" placeholder="Enter email" id="email"
+                                        value="Vijay Parmar">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="email">Timeslot</label>
+                                    <div class="inrow-chipgroup col-12 p-3">
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip1" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip1">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip2" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip2">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip3" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip3">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip4" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip4">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip5" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip5">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="submit-button-group col-12 p-0 text-right m-0">
+                        <span>
+                            <button type="button" class="obtn obtn-secondary obtn-md mr-2">Cancel</button>
+                            <button type="button" class="obtn obtn-primary obtn-reg">Schedule</button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="rescheduleInterviewModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header d-flex align-items-center p-2">
+                    <h3 class="imcard--title fontfam-nm-bold m-0">Reschedule Interview - Subramanyam Jaishankar</h3>
+                    <button type="button" class="close opacity-1 p-0 m-0" data-dismiss="modal"><i
+                            class="fa-regular fa-xmark color-red"></i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body px-0">
+                    <div class="popupform-content col-lg-12 p-0 bsb-1 mb-3">
+                        <h4 class="form-group-subhead m-0 px-3 mb-2">Interview Details</h4>
+                        <div class="inrow-modal_form_details col-lg-12 p-0">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="SelectDocument" class="mb-1">Timezone</label>
+                                    <p class="form-control-value m-0 p-0">Indian Standard Time (+5:30)</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="email" class="mb-1">Date</label>
+                                    <p class="form-control-value m-0 p-0">08/04/2023</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="email" class="mb-1">Timeslot</label>
+                                    <p class="form-control-value m-0 p-0">10:00 AM - 10:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popupform-content col-lg-12 p-0">
+                        <h4 class="form-group-subhead m-0 px-3 mb-2">New Interview Schedule</h4>
+                        <div class="inrow-modal_form">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="SelectDocument">Timezone</label>
+                                    <span class="has-icon">
+                                      <select class="form-control required" name="" id="SelectDocument">
+                                        <option value="">Select Document Type</option>
+                                        <option value="">Document 1 type</option>
+                                        <option value="">Document 2 type</option>
+                                      </select>
+                                      <i class="con fa-regular fa-angle-down px-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="email">Date</label>
+                                    <input type="date" class="form-control" placeholder="Enter email" id="email"
+                                        value="Vijay Parmar">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="email">Timeslot</label>
+                                    <div class="inrow-chipgroup col-12 p-3">
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip11" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip11">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip22" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip22">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip33" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip33">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip44" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip44">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                        <span class="timeslot-chip-group mb-2 mr-2">
+                                            <input type="radio" id="chip55" name="age" value="30">
+                                            <label class="timeslot-chip px-2 py-1 m-0" for="chip55">10:00 AM - 10:30 AM</label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="submit-button-group col-12 p-0 text-right m-0">
+                        <span>
+                            <button type="button" class="obtn obtn-secondary obtn-md mr-2">Cancel</button>
+                            <button type="button" class="obtn obtn-primary obtn-reg">Reschedule</button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cancelInterviewModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header d-flex align-items-center p-2">
+                    <h3 class="imcard--title fontfam-nm-bold m-0">Cancel Interview - Subramanyam Jaishankar</h3>
+                    <button type="button" class="close opacity-1 p-0 m-0" data-dismiss="modal"><i
+                            class="fa-regular fa-xmark color-red"></i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body px-0">
+                    <div class="popupform-content col-lg-12 p-0">
+                        <div class="inrow-modal_form">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="email">Reason for cancellation</label>
+                                    <textarea class="form-control" name="" id="" rows="5"></textarea>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="submit-button-group col-12 p-0 text-right m-0">
+                        <span>
+                            <button type="button" class="obtn obtn-secondary obtn-md mr-2">Cancel</button>
+                            <button type="button" class="obtn obtn-primary obtn-reg">Confirm</button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Info: The Modal END -->
+    <!-- Info: The Modal -->
+    <div class="modal fade bd-example-modal-lg" id="managerViewModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title color-heading1 fontfam-hn-bold font-18">Follow up task</h4>
+                    <button type="button" class="close opacity-1" data-dismiss="modal"><i
+                            class="fa-regular fa-xmark color-red"></i></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="popupform-content col-lg-12 p-0">
+                        <div class="form-group">
+                            <label for="Performance" class="fontfam-hn-medium font-16 color-black">Performance
+                                Highlights</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Performance"
+                                disabled>quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Help" class="fontfam-hn-medium font-16 color-black">Help Required</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Help"
+                                disabled>Please change my shift timing to D6 i.e. 8AM to 6PM.</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Manager
+                                Comment</label>
+                            <textarea class="form-control" rows="2" placeholder="Type here" id="Challenges"></textarea>
+                        </div>
+
+                        <div class="inrow-group col-lg-12 p-0">
+                            <div class="col-lg-4 pl-0">
+                                <div class="form-group m-0">
+                                    <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Manager
+                                        Comment</label>
+                                    <textarea class="form-control" rows="2" placeholder="Type here"
+                                        id="Challenges"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group m-0">
+                                    <label for="Challenges" class="fontfam-hn-medium font-16 color-black">Manager
+                                        Comment</label>
+                                    <div class="inrow-group p-0 col-12">
+                                        <input class="form-control d-inline w-50" type="date" id="birthday"
+                                            name="birthday">
+                                        <input class="form-control d-inline w-50" type="date" id="birthday"
+                                            name="birthday">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 pr-0">
+                                <div class="form-group m-0">
+                                    <label for="Challenges"
+                                        class="fontfam-hn-medium font-16 color-black">&nbsp;</label><br>
+
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                        <span class="open_close">
+                                            <b class="opentxt">OPEN</b>
+                                            <b class="closetxt">CLOSE</b>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="submit-button-group col-12 p-0 text-right m-0">
+                        <span>
+                            <button type="button" class="btn mp btn-outline btn-sm mr-2">Discard</button>
+                            <button type="button" class="btn mp btn-primary btn-sm">Submit</button>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Info: The Modal END -->
+    <!-- Scripts goes below -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main-scripts.js"></script>
+</body>
+
+</html>
