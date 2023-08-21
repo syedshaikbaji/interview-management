@@ -517,7 +517,7 @@ section.navigation-section {
 }
 
 .bc_nav_profile .bc_nav_profile--dropdown_btn[aria-expanded="true"] i {
-    color: #00c1ad;
+    color: var(--text-color-blue);
 }
 
 .bc_nav_profile--dropdown {
@@ -550,7 +550,7 @@ section.navigation-section {
 }
 
 .bc_nav_profile--dropdown ul li a:hover {
-    color: #00c1ad;
+    color: var(--text-color-blue);
 }
 
 .bc_nav_profile--dropdown.active {
