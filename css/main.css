@@ -177,6 +177,9 @@
 
     --firm-logo-block-width: 200px;
 
+    --requisitions-heading-height: 36px;
+    --recruiters-search-height: 72px;
+
     /* old vars */
     --width: 400px;
     --font-family-one: 'Helvetica Neue';
@@ -771,6 +774,10 @@ ul.bc_module_list>li a img {
     letter-spacing: 0px;
     text-align: left;
     line-height: 20px;
+    max-height: var(--requisitions-heading-height);
+}
+.requisitions-list-search{
+    max-height: var(--recruiters-search-height);
 }
 
 .form-control {
@@ -1056,6 +1063,19 @@ button.notification-bell:active i {
     text-align: center;
 }
 
+.mobilenavigation-backdrop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: transparent;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
 /* Info: recruiters-list--item styles END */
 @media screen and (min-width: 992px) {
     .lc_main_aside {
@@ -1080,9 +1100,6 @@ button.notification-bell:active i {
     }
 
     .recruiters-list {
-        --requisitions-heading-height: 36px;
-        --recruiters-search-height: 72px;
-
         max-height: calc(100vh - var(--main-navigation-height) - 32px - var(--requisitions-heading-height) - var(--recruiters-search-height) - 16px);
         overflow-y: auto;
     }
@@ -1218,6 +1235,12 @@ button.notification-bell:active i {
 
     ul.bc_module_list.is_open {
         height: calc(100vh) !important;
+    }
+    .mobilenavigation-backdrop.active{
+        display: block;
+        background: #0000003d;
+        left: 0;
+        pointer-events: all;
     }
 }
 
